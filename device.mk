@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from sdm660-common
-$(call inherit-product, device/asus/sdm660-common/sdm660.mk)
+# Inherit from X00TD
+$(call inherit-product, device/asus/X00TD/sdm660.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
