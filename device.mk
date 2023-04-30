@@ -96,4 +96,4 @@ PRODUCT_PACKAGES += \
     X00TDWifiOverlay
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
+$(call inherit-product, vendor/asus/sdm660-common/sdm660-common-vendor.mk)
