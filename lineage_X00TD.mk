@@ -12,15 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit some riceDroid stuff.
-RICE_MAINTAINER := SKetU-l
+# Inherit some RisingOSS stuff.
+RISING_MAINTAINER := SKetU-l
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 SUSHI_BOOTANIMATION := 1080
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
 WITH_GMS := true
 TARGET_CORE_GMS := true
 TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_BUILD_APERTURE_CAMERA := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
