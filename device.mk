@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from sdm660-common
+# Inherit from X00TD
 $(call inherit-product, device/asus/X00TD/sdm660.mk)
 
 # Enable updating of APEXes
@@ -96,4 +96,4 @@ PRODUCT_PACKAGES += \
     X00TDWifiOverlay
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/asus/sdm660-common/sdm660-common-vendor.mk)
+$(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
