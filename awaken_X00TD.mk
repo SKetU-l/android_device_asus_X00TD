@@ -9,25 +9,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common awakenOS stuff.
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
-# Inherit some RisingOSS stuff.
-RISING_MAINTAINER := SKetU-l
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-SUSHI_BOOTANIMATION := 1080
-WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_USE_PIXEL_FINGERPRINT := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_BUILD_APERTURE_CAMERA := true
+# Awaken hmm
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_X00TD
+PRODUCT_NAME := awaken_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
