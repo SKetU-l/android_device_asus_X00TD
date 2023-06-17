@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_X00TD.mk
+    $(LOCAL_DIR)/bootleg_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_X00TD-userdebug \
-    awaken_X00TD-user \
-    awaken_X00TD-eng
+    bootleg_X00TD-userdebug \
+    bootleg_X00TD-user \
+    bootleg_X00TD-eng
